@@ -343,18 +343,30 @@
 # largest and smallest numbers in the list without using the built-in max() or min() functions.
 
     
-def max_min(lists):
-    if isinstance(lists,(list )):
-      sorted_lists =  sorted(lists)
-      maxm = sorted_lists[-2]
-      minm = sorted_lists[0]
+# def max_min(lists):
+#     if isinstance(lists,(list )):
+#       sorted_lists =  sorted(lists)
+#       maxm = sorted_lists[-2]
+#       minm = sorted_lists[0]
     
-    return(minm , maxm)
+#     return(minm , maxm)
+ 
+# print(max_min([23,45,67,4,67,3,78]))
+# Write a Python function that counts the number of vowels (a, e, i, o, u) in a given string.
+
+def number_of_vowels(string):
+    count=0
+    vowel= "aeiouAEIOU"
+    if isinstance(string,str):
+        for char in string:
+            if char in vowel:
+                count += 1
+        return count
+    else:
+        return ("strings")
+print(number_of_vowels("hello world  python"))
 
 
-
-   
-print(max_min([23,45,67,4,67,3,78]))
 
 
 

@@ -326,18 +326,41 @@
 
 
 
-def sum_all_digits(numbers):
-    total=0
-    if isinstance(numbers,(int)):
-        for num in str(numbers):
-            total+=int(num)
-        return total
-    else:
-        ("enter integers")
+# def sum_all_digits(numbers):
+#     total=0
+#     if isinstance(numbers,(int)):
+#         for num in str(numbers):
+#             total+=int(num)
+#         return total
+#     else:
+#         ("enter integers")
 
-tot=sum_all_digits((234567578)) 
-print(tot)
+# tot=sum_all_digits((234567578)) 
+# print(tot)
+
+# Write a Python function that takesa list of numbers and returns both the 
+
+# largest and smallest numbers in the list without using the built-in max() or min() functions.
+
     
+def max_min(lists):
+    if isinstance(lists,(list )):
+      sorted_lists =  sorted(lists)
+      maxm = sorted_lists[-2]
+      minm = sorted_lists[0]
+    
+    return(minm , maxm)
+
+
+
+   
+print(max_min([23,45,67,4,67,3,78]))
+
+
+
+
+
+
 
 
 
